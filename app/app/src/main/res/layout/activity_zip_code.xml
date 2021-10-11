@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201F1F"
+    android:fillViewport="true"
+    tools:context=".view.ZipCodeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/inform_address"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/zipcode"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/et_zip_code"
+            app:layout_constraintEnd_toEndOf="@+id/et_zip_code"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_zip_code" />
+
+        <EditText
+            android:id="@+id/et_zip_code"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="N.º"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/et_number"
+            app:layout_constraintEnd_toEndOf="@+id/et_number"
+            app:layout_constraintStart_toStartOf="@+id/et_number" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="36dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/et_street"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_street" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/address"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/et_street"
+            app:layout_constraintEnd_toEndOf="@+id/et_street"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_street" />
+
+        <EditText
+            android:id="@+id/et_street"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/et_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_zip_code" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/district"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/et_neighbor"
+            app:layout_constraintEnd_toEndOf="@+id/et_neighbor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_neighbor" />
+
+    <EditText
+        android:id="@+id/et_neighbor"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/text_box"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_street" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/city"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/et_city"
+            app:layout_constraintEnd_toEndOf="@+id/et_city"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_city" />
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/text_box"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_neighbor" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/state"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/sp_state"
+            app:layout_constraintEnd_toEndOf="@+id/sp_state"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sp_state" />
+
+        <Spinner
+            android:id="@+id/sp_state"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/text_box_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_city" />
+
+        <Button
+            android:id="@+id/finishbutton"
+            android:layout_width="127dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/text_box_2"
+            android:text="@string/finish"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_state" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
